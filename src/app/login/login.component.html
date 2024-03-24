@@ -1,1 +1,35 @@
-<p>login works!</p>
+<main>
+    <div [ngClass]="'contenedor__todo'">
+        <div [ngClass]="'caja__trasera'">
+            <div [ngClass]="'caja__trasera__login'">
+                <h3>¿ Ya tienes una cuenta?</h3>
+                <p>Inicia sesión para entrar en la página</p>
+                <button id="btn__iniciar-sesion">Iniciar sesión</button>
+            </div>
+            <div [ngClass]="'caja__trasera__resgister'">
+                <h3>¿Aún no tienes cuenta?</h3>
+                <p>Regístrate para que puedas iniciar sesión</p>
+                <button id="btn__registrarse">Regístrarse</button>
+            </div>
+        </div>
+        <!--Formulario de Login y Registro-->
+        <div [ngClass]="'contenedor__login-registrer'">
+            <!--Login-->
+            <form action="" [ngClass]="'formulario__login'">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" placeholder="Correo Electronico">
+                <input type="password" placeholder="Contraseña">
+                <button>Entrar</button>
+            </form>
+            <!--Registro-->
+            <form action="" [ngClass]="'formulario__registrer'">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" placeholder="Nombre Completo">
+                <input type="text" placeholder="Correo Electronico">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <button>Regístrarse</button>
+            </form>
+        </div>
+    </div>
+</main>
