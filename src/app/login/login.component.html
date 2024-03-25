@@ -2,7 +2,7 @@
     <div [ngClass]="'contenedor__todo'">
         <div [ngClass]="'caja__trasera'">
             <div [ngClass]="'caja__trasera__login'">
-                <h3>¿ Ya tienes una cuenta?</h3>
+                <h3 [ngClass]="isAdmin ? 'red' : 'blue' ">¿ Ya tienes una cuenta?</h3>
                 <p>Inicia sesión para entrar en la página</p>
                 <button id="btn__iniciar-sesion">Iniciar sesión</button>
             </div>
@@ -17,7 +17,7 @@
             <!--Login-->
             <form action="" [ngClass]="'formulario__login'">
                 <h2>Iniciar Sesión</h2>
-                <input type="text" placeholder="Correo Electronico">
+                <input type="text" placeholder="Correo Electronico" [ngModel]="correo">
                 <input type="password" placeholder="Contraseña">
                 <button>Entrar</button>
             </form>

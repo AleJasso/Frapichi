@@ -37,3 +37,10 @@ main{
     backdrop-filter: blur(10px);
     background-color: rgba(0, 128, 255, 0.5);
 }
+
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}

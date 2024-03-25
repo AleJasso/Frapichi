@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { environment } from '../../environments/environments';
 
 @Component({
   selector: 'app-login',
@@ -10,5 +11,11 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  isAdmin = environment.isAdmin;
+  correo = "";
+
+  ngOnChanges() {
+    console.log(`ngOnChanges - data is ${this.correo}`);
+  }
 
 }
